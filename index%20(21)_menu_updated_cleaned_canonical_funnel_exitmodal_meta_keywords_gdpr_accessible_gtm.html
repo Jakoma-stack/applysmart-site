@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9P57D8T207"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
+gtag('config', 'G-9P57D8T207');
+</script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="ApplySmart gives you plug-and-play prompts, job search packs, and 1:1 help to get hired faster. Built by real hiring pros." name="description"/>
+<title>ApplySmart | AI Tools to Win More Interviews</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://i.imgur.com/H7Lmy48.png" rel="icon" type="image/png"/>
+<style>
+:root {
+--bg-dark: #0f1115;
+--bg-mid: #1b1d25;
+--green: #00e676;
+--green-dark: #00c867;
+--text-light: #f0f0f0;
+--text-muted: #c4c4c4;
+}
+
+body {
+margin: 0;
+font-family: 'Inter', sans-serif;
+background-color: var(--bg-dark);
+color: var(--text-light);
+line-height: 1.7;
+font-size: 1rem;
+}
+
+a {
+text-decoration: none;
+}
+
+header.hero {
+text-align: center;
+padding: 1rem;
+}
+
+.hero img {
+max-width: 180px;
+height: auto;
+margin: 0 auto 1rem;
+display: block;
+}
+
+.hero h1 {
+font-size: 1.8rem;
+font-weight: 700;
+margin-bottom: 0.8rem;
+}
+
+.hero h1 span {
+color: var(--green);
+}
+
+.hero p {
+font-size: 1rem;
+color: var(--text-muted);
+max-width: 700px;
+margin: 0 auto 1.5rem;
+}
+
+.cta-button {
+background-color: var(--green);
+padding: 1rem 2rem;
+font-size: 1rem;
+font-weight: 600;
+border-radius: 12px;
+color: #000;
+box-shadow: 0 0 15px #00e67688;
+transition: background 0.3s ease;
+animation: pulse 2s infinite;
+display: inline-block;
+}
+
+@keyframes pulse {
+0% { box-shadow: 0 0 0 0 rgba(0, 230, 118, 0.4); }
+70% { box-shadow: 0 0 0 12px rgba(0, 230, 118, 0); }
+100% { box-shadow: 0 0 0 0 rgba(0, 230, 118, 0); }
+}
+
+.cta-button:hover {
+background-color: var(--green-dark);
+}
+
+.hamburger-menu {
+width: 40px;
+height: 30px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+background-color: #2b2e38;
+padding: 6px;
+border-radius: 6px;
+cursor: pointer;
+position: absolute;
+top: 1rem;
+right: 1rem;
+z-index: 999;
+}
+
+.hamburger-menu span {
+height: 3px;
+background: #bbb;
+border-radius: 2px;
+width: 100%;
+transition: 0.3s ease;
+}
+
+.dropdown-menu {
+position: absolute;
+top: 4rem;
+right: 1rem;
+background-color: #1e2129;
+padding: 1rem;
+border-radius: 8px;
+box-shadow: 0 0 15px rgba(0, 230, 118, 0.2);
+display: none;
+flex-direction: column;
+gap: 1rem;
+min-width: 200px;
+z-index: 998;
+}
+
+.dropdown-menu a {
+color: var(--text-light);
+font-size: 1rem;
+}
+
+.dropdown-menu.show {
+display: flex;
+}
+
+.social-icons {
+display: flex;
+justify-content: center;
+gap: 1.5rem;
+margin-top: 2rem;
+}
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+.dropbtn {
+cursor: pointer;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #111;
+min-width: 180px;
+box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+z-index: 1;
+flex-direction: column;
+padding: 10px 0;
+border-radius: 8px;
+}
+
+.dropdown-content a {
+color: white;
+padding: 10px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {
+background-color: #222;
+}
+
+.dropdown:hover .dropdown-content {
+display: flex;
+}
+.social-icons a {
+font-size: 1.4rem;
+color: var(--green);
+transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+color: #fff;
+}
+
+.section {
+padding: 3rem 1.5rem;
+max-width: 850px;
+margin: auto;
+}
+
+.section h2 {
+text-align: center;
+font-size: 1.8rem;
+margin-bottom: 2rem;
+color: #fff;
+}
+
+.grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 2rem;
+}
+
+.card {
+background-color: #000;
+border-radius: 16px;
+box-shadow: 0 0 10px rgba(0, 255, 153, 0.08);
+padding: 2rem;
+width: 100%;
+max-width: 300px;
+text-align: center;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+border: 1px solid #2c2f36;
+}
+
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 0 25px rgba(0, 255, 153, 0.15);
+}
+
+.card h3 {
+font-size: 1.1rem;
+margin-bottom: 0.75rem;
+}
+
+.card p {
+font-size: 0.95rem;
+color: var(--text-muted);
+margin: 0.5rem 0;
+}
+
+.card strong {
+display: block;
+margin-top: 0.5rem;
+color: #fff;
+}
+
+.testimonial {
+background-color: var(--bg-mid);
+border-left: 4px solid var(--green);
+padding: 1.5rem;
+margin: 1rem auto;
+max-width: 600px;
+color: var(--text-light);
+font-style: italic;
+}
+
+.footer {
+background-color: #121419;
+color: #bbb;
+text-align: center;
+padding: 0.8rem 1rem;
+font-size: 0.75rem;
+}
+
+.footer p a {
+color: var(--green);
+margin: 0 0.5rem;
+}
+
+.built-by {
+color: #fff;
+font-size: 0.75rem;
+text-align: center;
+}
+
+.built-by a {
+color: #fff;
+font-weight: 700;
+text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+.hero h1 {
+font-size: 1.6rem;
+}
+
+.hero p {
+font-size: 0.95rem;
+}
+
+.grid {
+flex-direction: column;
+align-items: center;
+}
+}
+</style>
+<link href="https://www.applysmart.co.uk/" rel="canonical"/><meta content="job search AI, application prompts, job interview help, STAR method, CV writing" name="keywords"/></head>
+<body>
+<div aria-label="Open menu" class="hamburger-menu" id="hamburger" role="button" tabindex="0">
+<span></span><span></span><span></span>
+</div>
+<nav class="dropdown-menu" id="dropdown" role="navigation">
+<a href="https://applysmart.co.uk/about.html?utm_source=website&amp;utm_medium=menu&amp;utm_campaign=appliesmart_landing" target="_blank">About Us</a>
+<a href="https://applysmart.co.uk/products.html?utm_source=website&amp;utm_medium=menu&amp;utm_campaign=appliesmart_landing" target="_blank">Products and Services</a>
+<a href="https://applysmart.co.uk/how.html?utm_source=website&amp;utm_medium=menu&amp;utm_campaign=appliesmart_landing" target="_blank">How it Works</a>
+<a href="https://tally.so/r/nPeqQb?utm_source=website&amp;utm_medium=menu&amp;utm_campaign=appliesmart_landing" target="_blank">Sign Up</a>
+<a href="https://applysmart.co.uk/faq.html?utm_source=website&amp;utm_medium=menu&amp;utm_campaign=appliesmart_landing" target="_blank">FAQ</a>
+<div class="dropdown">
+<a class="dropbtn" href="#">Explore Our Tools</a>
+<div class="dropdown-content">
+<a href="https://jakoma.org" rel="noopener noreferrer" target="_blank">Jakoma</a>
+<a href="https://100to10k.com" rel="noopener noreferrer" target="_blank">100to10K Challenge</a>
+</div>
+</div>
+</nav>
+<header class="hero">
+<img alt="ApplySmart Logo" src="https://i.imgur.com/H7Lmy48.png"/>
+<h1><span>Level Up</span> Your Career with <span>Confidence</span></h1>
+<p>Senior-level insight meets AI. ApplySmart helps you build stronger CVs, smarter applications, and better outcomes.</p>
+<a class="cta-button" href="https://applysmart.co.uk/products.html?utm_source=website&amp;utm_medium=hero&amp;utm_campaign=appliesmart_landing" target="_blank">Get Your Pack Now</a>
+<div aria-label="Social Media Links" class="social-icons">
+<a aria-label="Facebook" href="https://www.facebook.com/ApplySmartTools/" target="_blank"><i class="fab fa-facebook"></i></a>
+<a aria-label="LinkedIn" href="https://www.linkedin.com/in/applysmart/" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a aria-label="Instagram" href="https://www.instagram.com/applysmart8/" target="_blank"><i class="fab fa-instagram"></i></a>
+<a aria-label="TikTok" href="https://www.tiktok.com/@applysmart1" target="_blank"><i class="fab fa-tiktok"></i></a>
+</div>
+</header>
+<section class="section">
+<h2>🛡️ Backed by Real Experience</h2>
+<div class="grid">
+<div class="card">
+<h3>🎓 Pro Insights</h3>
+<p>Created by professionals who’ve led recruitment, policy, and data strategy across sectors.</p>
+<strong>Used by leaders and new grads alike.</strong>
+</div>
+<div class="card">
+<h3>🤖 Smart Prompts</h3>
+<p>Our AI is trained on what hiring managers actually want. We combine human wisdom + tech.</p>
+<strong>Just follow the prompt – no guesswork.</strong>
+</div>
+<div class="card">
+<h3>🚀 Career Clarity</h3>
+<p>We help you aim higher, pitch smarter, and move faster.</p>
+<strong>Build confidence in every application.</strong>
+</div>
+</div>
+</section>
+<section class="section">
+<h2>🌟 Why People Love ApplySmart</h2>
+<div class="testimonial">“I’ve been in the public sector 20+ years and this is the best application support I’ve ever seen.”</div>
+<div class="testimonial">“It’s like having a career coach in your pocket. Clear, clever, and confidence-boosting.”</div>
+<div class="testimonial">“I got my interview booked 3 days after using ApplySmart. Never applying blind again.”</div>
+</section>
+<section class="section">
+<h2>💡 Ready to Apply Smarter?</h2>
+<p style="text-align:center; max-width:700px; margin:0 auto 2rem; color:var(--text-muted); font-size:1.1rem;">
+Whether you're applying for your first role or aiming for senior leadership, ApplySmart gives you the edge.
+</p>
+<div style="text-align:center;">
+<a class="cta-button" href="https://tally.so/r/nPeqQb?utm_source=website&amp;utm_medium=cta&amp;utm_campaign=appliesmart_landing" target="_blank">Try Free Prompts</a>
+</div>
+</section>
+<div style="text-align:center; padding: 2rem 0;">
+<p style="color: var(--text-light); font-weight: 600;">Contact Us: <a href="mailto:support@applysmart.co.uk" style="color: var(--green);">support@applysmart.co.uk</a></p>
+</div>
+<footer style="text-align: center; padding: 1.5rem 1rem; font-size: 0.9rem; background-color: #f8f8f8; color: #333;">
+<p style="margin-bottom: 0.5rem; color: #333;">© 2025 Jakoma. All rights reserved.</p>
+<p style="margin-bottom: 0.5rem;">
+<a href="https://policy.jakoma.org" style="margin: 0 10px; text-decoration: none; color: #2c3e50;">Privacy Policy</a> |
+<a href="https://policy.jakoma.org/terms" style="margin: 0 10px; text-decoration: none; color: #2c3e50;">Terms of Use</a> |
+<a href="https://policy.jakoma.org#cookies" style="margin: 0 10px; text-decoration: none; color: #2c3e50;">Cookies</a>
+</p>
+<a href="https://jakoma.org" style="text-decoration: none;" target="_blank">
+<img alt="Jakoma Logo" src="https://i.imgur.com/EBwi9Mm.jpeg" style="height: 40px; margin-top: 10px;"/><br/>
+<span style="color: #2c3e50;">Powered by Jakoma — Smarter Tools. Real Results.</span>
+</a>
+</footer>
+<script>
+const hamburger = document.getElementById("hamburger");
+const dropdown = document.getElementById("dropdown");
+hamburger.addEventListener("click", () => dropdown.classList.toggle("show"));
+document.addEventListener("click", (e) => {
+if (!hamburger.contains(e.target) && !dropdown.contains(e.target)) {
+dropdown.classList.remove("show");
+}
+});
+</script>
+<section class="funnel-section" id="funnel">
+<h2>How It Works</h2>
+<div class="funnel-steps">
+<div class="step">
+<h3>1. Start Free</h3>
+<p>Download 10 free job prompts and checklist — no sign-up required.</p>
+</div>
+<div class="step">
+<h3>2. Get Clarity</h3>
+<p>Use guided packs to write stronger CVs, cover letters, and STAR answers fast.</p>
+</div>
+<div class="step">
+<h3>3. Land Interviews</h3>
+<p>Level up with coaching, AI feedback, or expert reviews when you're ready.</p>
+</div>
+</div>
+<a class="cta-button" href="/join.html">Explore Your Starter Pack</a>
+</section>
+<div class="exit-modal" id="exitModal" style="display:none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; 
+    background-color: rgba(0,0,0,0.7); z-index: 9999; justify-content: center; align-items: center;">
+<div style="background: #fff; padding: 2rem; border-radius: 10px; max-width: 400px; text-align: center;">
+<h2>Leaving so soon?</h2>
+<p>Grab 10 of our best job prompts + checklist for free. No signup needed.</p>
+<a class="cta-button" href="/join.html">Download Free Starter Kit</a><br/><br/>
+<button aria-label="No thanks button" onclick="document.getElementById('exitModal').style.display='none';">No thanks</button>
+</div>
+</div>
+<script>
+    let exitShown = false;
+    document.addEventListener("mouseout", function(e) {
+        if (!exitShown && e.clientY < 50) {
+            document.getElementById("exitModal").style.display = "flex";
+            exitShown = true;
+        }
+    });
+    </script>
+<div id="cookieConsentBanner" style="position: fixed; bottom: 0; left: 0; right: 0; background-color: #333; color: #fff; padding: 1rem; display: flex; justify-content: space-between; align-items: center; z-index: 9999; font-size: 0.9rem;">
+<span>We use cookies to enhance your experience. You can accept or decline non-essential cookies.</span>
+<div>
+<button aria-label="Accept button" onclick="acceptCookies()" style="margin-right: 0.5rem; background-color: #4CAF50; color: white; border: none; padding: 0.5rem 1rem; cursor: pointer;">Accept</button>
+<button aria-label="Decline button" onclick="declineCookies()" style="background-color: #f44336; color: white; border: none; padding: 0.5rem 1rem; cursor: pointer;">Decline</button>
+</div>
+</div>
+<script>
+    function acceptCookies() {
+        document.cookie = "cookies_accepted=true; path=/";
+        document.getElementById("cookieConsentBanner").style.display = "none";
+    }
+    function declineCookies() {
+        document.cookie = "cookies_accepted=false; path=/";
+        document.getElementById("cookieConsentBanner").style.display = "none";
+    }
+    window.onload = function() {
+        if (!document.cookie.includes("cookies_accepted")) {
+            document.getElementById("cookieConsentBanner").style.display = "flex";
+        }
+    };
+    </script>
+
+<script>
+    // Track clicks on key buttons
+    document.addEventListener("DOMContentLoaded", function () {
+        const targets = [
+            {selector: 'a[href*="payhip.com"]', event: 'PayhipClick'},
+            {selector: 'a[href*="calendly.com"]', event: 'CalendlyClick'},
+            {selector: 'a[href*="checklist"]', event: 'ChecklistClick'}
+        ];
+        targets.forEach(({selector, event}) => {
+            document.querySelectorAll(selector).forEach(el => {
+                el.addEventListener("click", () => {
+                    if (window.dataLayer) {
+                        dataLayer.push({ event });
+                    }
+                });
+            });
+        });
+
+        // Scroll depth tracking (25%, 50%, 75%, 100%)
+        let scrollMarks = [25, 50, 75, 100];
+        let triggered = [];
+        window.addEventListener("scroll", () => {
+            let scrollPosition = window.scrollY + window.innerHeight;
+            let documentHeight = document.documentElement.scrollHeight;
+            let scrollPercent = Math.round((scrollPosition / documentHeight) * 100);
+            scrollMarks.forEach(pct => {
+                if (scrollPercent >= pct && !triggered.includes(pct)) {
+                    triggered.push(pct);
+                    if (window.dataLayer) {
+                        dataLayer.push({ event: "ScrollDepth", scrollPercent: pct });
+                    }
+                }
+            });
+        });
+
+        // Exit-intent event
+        let exitTracked = false;
+        document.addEventListener("mouseout", function (e) {
+            if (!exitTracked && e.clientY < 50) {
+                exitTracked = true;
+                if (window.dataLayer) {
+                    dataLayer.push({ event: "ExitIntent" });
+                }
+            }
+        });
+    });
+    </script>
+</body>
+</html>
+<script>
+const hamburger = document.getElementById("hamburger");
+const dropdown = document.getElementById("dropdown");
+hamburger.addEventListener("click", () => dropdown.classList.toggle("show"));
+document.addEventListener("click", (e) => {
+if (!hamburger.contains(e.target) && !dropdown.contains(e.target)) {
+dropdown.classList.remove("show");
+}
+});
+</script>
