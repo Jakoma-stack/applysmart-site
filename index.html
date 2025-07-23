@@ -301,7 +301,7 @@ align-items: center;
   <meta content="job prompts, CV help, cover letter prompts, AI job tools, job search support" name="keywords"/>
  </head>
  <body>
-  <div aria-label="Toggle menu" class="hamburger-menu" role="button" tabindex="0">
+  <div aria-expanded="false" aria-label="Toggle menu" class="hamburger-menu" id="hamburger" role="button" tabindex="0">
    <span>
    </span>
    <span>
@@ -625,15 +625,6 @@ dropdown.classList.remove("show");
     </span>
    </a>
   </footer>
-  <script>
-   document.getElementById('hamburger').addEventListener('click', function () {
-  const menu = document.getElementById('mobileMenu');
-  const overlay = document.querySelector('.mobile-menu-overlay');
-  menu.classList.toggle('open');
-  overlay.classList.toggle('open');
-  this.setAttribute('aria-expanded', menu.classList.contains('open'));
-});
-  </script>
  </body>
 </html>
 <script>
