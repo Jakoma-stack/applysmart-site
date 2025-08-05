@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
+  <!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject = t;
+  var ttq = w[t] = w[t] || [];
+  ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie"];
+  ttq.setAndDefer = function (t, e) {
+    t[e] = function () {
+      t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+    }
+  };
+  for (var i = 0; i < ttq.methods.length; i++) {
+    ttq.setAndDefer(ttq, ttq.methods[i])
+  }
+  ttq.load('D29OPDJC77UF7183H780'); // <- YOUR pixel ID, leave as-is for this app
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+
   <!-- Google tag (gtag.js) -->
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-9P57D8T207">
   </script>
